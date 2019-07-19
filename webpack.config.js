@@ -4,7 +4,6 @@ const postcssSimpleVars = require('postcss-simple-vars');
 const postcssMixins = require('postcss-mixins');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssNested = require('postcss-nested');
-const postcssSprites = require('postcss-sprites');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 
@@ -66,7 +65,6 @@ module.exports = {
                 postcssMixins(),
                 postcssPresetEnv(),
                 postcssNested(),
-                postcssSprites(),
                 cssnano({
                   minifyFontValues: { removeQuotes: false },
                   discardUnused: { fontFace: false },
