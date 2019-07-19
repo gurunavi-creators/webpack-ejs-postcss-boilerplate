@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* ==========================================================
+ footer
+========================================================== */
+.l-footer {
+  width: 100%;
+  min-width: $WIDTH_WRAPPER;
+  background-color: $CLR_BG_REVERSE;
+  &__inner {
+    overflow: hidden;
+  }
+  &__sub {
+    min-width: $WIDTH_WRAPPER;
+    padding: 23px 0;
+    background-color: $CLR_BG_COPY;
+    overflow: hidden;
+  }
+  &__copyright {
+    float: right;
+    color: $CLR_TXT_REVERSE;
+    font-size: $FONT_SIZE_12;
+    line-height: $LINE_HEIGHT_SS;
+  }
+}
+@mixin mq-min {
+  .l-footer {
+    min-width: 0;
+    &__inner {
+      overflow: visible;
+    }
+    &__sub {
+      min-width: 0;
+      padding: 24px 16px;
+      font-size: $FONT_SIZE_13;
+      text-align: center;
+    }
+    &__copyright {
+      float: none;
+      font-size: $FONT_SIZE_10;
+      line-height: $LINE_HEIGHT_SS;
+    }
+  }
+}

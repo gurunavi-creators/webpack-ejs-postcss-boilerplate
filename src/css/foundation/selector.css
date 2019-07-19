@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* セレクター初期設定用ファイル */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  position: relative;
+  font-family: $FAMILY;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  line-height: $LINE_HEIGHT_L;
+  color: $CLR_TXT;
+  font-size: $FONT_SIZE_15;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  @mixin mq-min {
+    background-color: $CLR_BG_SHADE;
+    line-height: $LINE_HEIGHT_M;
+    word-break: break-word;
+  }
+}
+
+/* ==========================================================
+ base Link
+========================================================== */
+a {
+  color: $CLR_TXT_LINK;
+  text-decoration: none;
+  opacity: 1;
+  &:hover {
+    opacity: $OPACITY;
+    text-decoration: underline;
+  }
+}
+

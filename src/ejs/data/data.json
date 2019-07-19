@@ -1,0 +1,20 @@
+{
+ "index": {
+  "title": "indexのtitle",
+  "h1": "indexのh1",
+  "text": "サンプルです。",
+  "bandtitle": [
+   "index 1",
+   "index 2"
+  ]
+ },
+ "sample": {
+  "title": "sampleのtitle",
+  "h1": "sampleのh1",
+  "text": "サンプルです。",
+  "bandtitle": [
+   "sample 1",
+   "sample 2"
+  ]
+ }
+}

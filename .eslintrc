@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "gnavi",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "SAMPLEMAIN": true,
+    "_": true,
+    "$": true,
+    "jQuery": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ],
+    "no-console": "warn"
+  }
+}
+

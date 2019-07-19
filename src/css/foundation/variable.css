@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* 変数を設定するファイル */
+
+/* font-family */
+$FAMILY: "Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",Meiryo,メイリオ,"MS PGothic","ＭＳ Ｐゴシック",Geneva,Arial,Verdana,sans-serif;
+$FAMILY_EN: "Verdana", "Arial", "Helvetica", "Clean", "Sans-serif";
+
+/* width */
+$WIDTH_WRAPPER: 1000px;
+$WIDTH_MAIN: 700px;
+
+/* font-size */
+$FONT_SIZE_34: 34px;
+$FONT_SIZE_22: 22px;
+$FONT_SIZE_20: 20px;
+$FONT_SIZE_15: 15px;
+$FONT_SIZE_13: 13px;
+$FONT_SIZE_12: 12px;
+$FONT_SIZE_10: 10px;
+
+/* line-height */
+$LINE_HEIGHT_L: 1.6;
+$LINE_HEIGHT_M: 1.5;
+$LINE_HEIGHT_MM: 1.4;
+$LINE_HEIGHT_S: 1.333;
+$LINE_HEIGHT_SS: 1.2;
+
+/* background-color */
+/* 背景色：標準 */
+$CLR_BG: #fff;
+/* 背景色：濃淡 */
+$CLR_BG_SHADE: #f7f5f0;
+/* 背景色：反転 */
+$CLR_BG_REVERSE: #757575;
+/* 背景色：コピーライト */
+$CLR_BG_COPY: #3b3732;
+
+/* color */
+/* 文字色：標準 */
+$CLR_TXT: #212121;
+/* 文字色：リンク */
+$CLR_TXT_LINK: #dc0012;
+/* 文字色：反転 */
+$CLR_TXT_REVERSE: #fff;
+
+/* border-color */
+/* 罫線：強調 */
+$CLR_BDR_STRONG: #e60012;
+
+/* opacity */
+/* 透明度：標準 */
+$OPACITY: 0.8;

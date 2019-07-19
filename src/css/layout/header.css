@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* container
+---------------------------------------------------------- */
+.l-container {
+  width: $WIDTH_WRAPPER;
+  margin: 0 auto;
+  @mixin mq-min {
+    width: 100%;
+  }
+}
+
+/* ==========================================================
+ header
+========================================================== */
+.l-header {
+  width: 100%;
+  background-color: $CLR_BG;
+  /* contents */
+  &__contents {
+    min-width: $WIDTH_WRAPPER;
+    border-bottom: 2px solid $CLR_BDR_STRONG;
+    padding: 30px;
+    @mixin mq-min {
+      min-width: 0;
+    }
+  }
+  /* logo */
+  &__logo {
+    text-indent: 34px;
+    a {
+      display: block;
+      background: url(../img/logo.png) no-repeat 0 0;
+      background-size: contain;
+    }
+  }
+}
+
+/* ==========================================================
+ contents
+========================================================== */
+.l-contents {
+  @extend .clearfix;
+  padding-bottom: 128px;
+  @mixin mq-min {
+    padding: 40px 16px 72px;
+  }
+  &__main {
+    width: $WIDTH_MAIN;
+    margin: 60px auto 0;
+    @mixin mq-min {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<% var set = {
+    path: './',
+    page: 'index',
+    category: index
+  };  
+%>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include('../include/meta', {set:set}) %>
+</head>
+<body>
+<% include ../include/header %>
+
+<!-- contents -->
+<div class="l-contents l-container">
+    <!-- contents__main -->
+    <div class="l-contents__main">
+        <%- include('../include/main', {set:set}) %>
+    </div><!-- /contents__main -->
+    <!-- End contents__main -->
+</div><!-- /contents -->
+<!-- End contents -->
+<% include ../include/footer %>
+<%- include('../include/script', {set:set}) %>
+</body>
+</html>

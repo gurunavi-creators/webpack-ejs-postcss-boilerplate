@@ -1,0 +1,11 @@
+<!-- main -->
+<main>
+    <h1 class="c-title"><%= set.category.h1 %></h1>
+    <p class="c-text"><%- set.category.text %></p>
+
+    <section class="section">
+        <%for(var i= 0; i<set.category.bandtitle.length; i++){%>
+        <h2><span><%= set.category.bandtitle[i] %></span></h2>
+        <%}%>
+    </section><!-- /section -->
+</main><!-- /main -->

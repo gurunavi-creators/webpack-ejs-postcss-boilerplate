@@ -1,0 +1,63 @@
+{
+  "name": "npm_ejs_postcss",
+  "description": "",
+  "version": "",
+  "homepage": "",
+  "main": "index",
+  "scripts": {
+    "bs": "browser-sync start -s ./dist -f ./dist",
+    "json": "chokidar ./src/ejs/data/source/ -c 'node createjson.js'",
+    "html:build": "ejs-cli -b src/ejs/html/ '/**/**.ejs' -o ./dist/ -O src/ejs/data/**.json",
+    "copy:img": "cpx './src/img/**' ./dist/assets/img",
+    "lint": "eslint ./src/js",
+    "fmt": "prettier --write './src/**/*.js'",
+    "build-file-clean": "rimraf ./dist",
+    "build": "npm run json & npm run html:build & npm run copy:img & webpack --mode production",
+    "watch": "watch 'npm run build' src/",
+    "dev": "npm run build-file-clean & npm run lint & npm run build && npm run bs & npm run watch"
+  },
+  "license": "ISC",
+  "author": "",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "jquery": "^1.12.1",
+    "node-pre-gyp": "^0.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "chokidar-cli": "^1.2.2",
+    "cpx": "^1.5.0",
+    "css-loader": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "ejs-cli": "^2.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-gnavi": "^2.0.2",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-simple-vars": "^5.0.2",
+    "postcss-sprites": "^4.2.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "watch": "^1.0.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-fix-style-only-entries": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "bugs": {}
+}

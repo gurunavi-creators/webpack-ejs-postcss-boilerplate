@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+/* c-text
+---------------------------------------------------------- */
+.c-text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @mixin mq-min {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }  
+}
+
+/* c-title
+---------------------------------------------------------- */
+.c-title {
+  margin-bottom: 60px;
+  line-height: $LINE_HEIGHT_MM;
+  font-size: $FONT_SIZE_34;
+  @mixin mq-min {
+    margin-bottom: 40px;
+    line-height: $LINE_HEIGHT_S;
+    font-size: $FONT_SIZE_22;
+  }
+}
