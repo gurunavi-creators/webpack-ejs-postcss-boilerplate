@@ -14,7 +14,7 @@ const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 module.exports = {
   entry: {
     main: ['./src/js/main.js', '@babel/polyfill'],
-    rule: './src/css/page/rule.css',
+    index: './src/css/page/index.css',
   },
 
   output: {
