@@ -20,7 +20,7 @@
   "author": "",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-pre-gyp": "^0.13.0"
   },
   "devDependencies": {
